@@ -1,0 +1,34 @@
+<div class="test">
+  <h1> {{ title }} </h1>
+  <h1> Название:{{ name }} </h1>
+  <h1> Id: {{ id }} </h1>
+  <h1> Максимальный урожай: {{ max_harvest }} </h1>
+  <h1> Время роста {{ growth_time }} </h1>
+  <h1> Размер: {{ size }} </h1>
+  <h1> Гладкость: {{ smoothness }} </h1>
+
+  <app-modal
+  ></app-modal>
+  <table border = 1>
+    <tr>
+      <td> name</td>
+    </tr>
+    <tr (click) = "test(item.url)"  *ngFor="let item of data">
+      <td> {{ item.name }}  </tr> 
+        <tr *ngFor="let check of info">
+  </table>
+  <button>press me</button>
+  
+  <!-- <div *ngFor="let item of infourl">
+    <h1 > tests </h1>
+
+    <h1> {{ item.name}} </h1>
+    <p> {{ item.max_harvest }}</p>
+    <p> {{ item.id }}</p>
+    <p> {{ item.grownth_time }}</p>
+    <p> {{ item.size }}</p>
+    <p> {{ item.smoothness }}</p>
+
+
+</div> -->
+</div>
